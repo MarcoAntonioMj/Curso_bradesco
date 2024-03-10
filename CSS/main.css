@@ -1,0 +1,73 @@
+body {
+    font-family: monospace; /* Define a fonte para o corpo do documento */
+}
+
+ul {
+    font-family: Helvetica; /* Define a fonte para listas não ordenadas */
+}
+
+li {
+    list-style: circle; /* Define o estilo do marcador de lista para círculo */
+}
+
+.list {
+    list-style: square; /* Define o estilo do marcador de lista para quadrado */
+}
+
+#msg {
+    font-family: monospace; /* Define a fonte para o elemento com ID 'msg' */
+}
+
+:root {
+    --green: #00ff00; /* Define uma variável CSS para a cor verde */
+    --white: #ffffff; /* Define uma variável CSS para a cor branca */
+    --black: #000000; /* Define uma variável CSS para a cor preta */
+}
+
+/* Define as variáveis de tema para o tema claro */
+.light-theme {
+    --bg: var(--green); /* Cor de fundo */
+    --fontcolor: var(--black); /* Cor do texto */
+    --btnBg: var(--black); /* Cor de fundo do botão */
+    --btnFontColor: var(--white); /* Cor do texto do botão */
+}
+
+/* Define as variáveis de tema para o tema escuro */
+.dark-theme {
+    --bg: var(--black); /* Cor de fundo */
+    --fontcolor: var(--green); /* Cor do texto */
+    --btnBg: var(--white); /* Cor de fundo do botão */
+    --btnFontColor: var(--black); /* Cor do texto do botão */
+}
+
+/* Aplica as cores de acordo com o tema selecionado */
+* {
+    color: var(--fontcolor); /* Define a cor do texto para o tema selecionado */
+    font-family: Helvetica; /* Define a fonte para todos os elementos */
+}
+
+body.light-theme {
+    background: var(--bg); /* Define o fundo do corpo para o tema claro */
+}
+
+body.dark-theme {
+    background: var(--bg); /* Define o fundo do corpo para o tema escuro */
+}
+
+/* Estilos do botão */
+.btn {
+    position: absolute; /* Posição absoluta para posicionar o botão */
+    top: 20px; /* Distância do topo */
+    left: 250px; /* Distância da esquerda */
+    height: 50px; /* Altura do botão */
+    width: 50px; /* Largura do botão */
+    border-radius: 50%; /* Borda circular para o botão */
+    border: none; /* Remove a borda do botão */
+    color: var(--btnFontColor); /* Cor do texto do botão */
+    background-color: var(--btnBg); /* Cor de fundo do botão */
+}
+
+/* Estilo do botão quando em foco */
+.btn:focus {
+    outline-style: none; /* Remove a borda de foco ao clicar no botão */
+}
